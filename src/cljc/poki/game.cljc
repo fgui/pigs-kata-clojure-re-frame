@@ -69,6 +69,14 @@
       (one state)
       (dice state val))))
 
+(defn roll-done
+  "Dice decision"
+  [state val]
+  (if
+    (= val 1)
+    (one state)
+    (dice state val)))
+
 ;; Function for dice
 (defn random-dice []
      (->

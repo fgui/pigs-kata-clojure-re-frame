@@ -17,7 +17,7 @@
     [:div "current score: " @current-score]
     [:div "score: " @game-score]
     [:div "round: " @round]
-     [:button {:on-click #(re-frame/dispatch [:poki.events/roll])} "Roll me please" ]
+     [:button {:on-click #(re-frame/dispatch [:poki.events/roll-remote])} "Roll me please" ]
      [:button {:on-click #(re-frame/dispatch [:poki.events/hold])} "Hold!"]
      ]
     [:div "The Winner is " @current-player])))
